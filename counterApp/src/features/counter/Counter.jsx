@@ -8,9 +8,7 @@ import {
 } from "./counterSlice";
 
 function Counter() {
-  // const count = useSelector(selectCount);
-  const count = useSelector((state) => state.counter.value);
-  console.log("Count: ", count);
+  const count = useSelector(selectCount);
   const dispatch = useDispatch();
 
   return (
